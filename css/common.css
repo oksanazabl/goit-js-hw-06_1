@@ -25,9 +25,12 @@ button {
 
 .gallery {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
   display: block;
-  margin-bottom: 30px;
+  margin-right: 30px;
 }
