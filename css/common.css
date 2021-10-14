@@ -23,14 +23,14 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: inline-block;
+  margin: 10px;
+}
+
 .gallery {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-li {
-  display: block;
-  margin-right: 30px;
 }
