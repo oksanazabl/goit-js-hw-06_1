@@ -1,3 +1,5 @@
+'use strict';
+
 let inputElem = document.querySelector('#name-input');
 inputElem.addEventListener('input', onInputChange);
 

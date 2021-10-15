@@ -1,3 +1,5 @@
+'use strict';
+
 let create = document.querySelector('[data-create]');
 let destroy = document.querySelector('[data-destroy]');
 let boxes = document.getElementById('boxes');

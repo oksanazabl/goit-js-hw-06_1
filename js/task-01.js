@@ -1,3 +1,5 @@
+'use strict';
+
 const liEl = document.querySelectorAll('li.item');
 console.log(`Number of categories: ${liEl.length}`);
 
