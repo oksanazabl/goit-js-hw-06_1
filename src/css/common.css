@@ -24,6 +24,7 @@ button {
 }
 
 img {
+  text-decoration: none;
   display: inline-block;
   margin: 10px;
 }
@@ -33,4 +34,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+li,
+ul {
+  display: block;
 }
