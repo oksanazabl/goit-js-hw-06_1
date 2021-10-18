@@ -1,8 +1,8 @@
 'use strict';
 
-let valueElem = Number(document.querySelector('#value').textContent);
+let valueElem = 0;
 
-let counterValue = document.querySelector('#value');
+const counterValue = document.querySelector('#value');
 
 const delBtn = document.querySelector('#counter').firstElementChild;
 const addBtn = document.querySelector('#counter').lastElementChild;
