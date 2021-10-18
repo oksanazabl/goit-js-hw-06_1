@@ -15,13 +15,15 @@ const images = [
   },
 ];
 
-const ulGalleryEl = document.querySelector('.gallery');
+const GalleryEl = document.querySelector('.gallery');
 
-const imgElem = images.map(elem => {
-  ulGalleryEl.insertAdjacentHTML(
+const imgElem
+  
+  = images.map(elem => {
+    GalleryEl.insertAdjacentHTML(
     'afterbegin',
     `<li class = "gal"><img src = "${elem.url}" alt = "${elem.alt}"  width = "150" height = "100" /></li>`,
   );
+  return elem;
 });
 
-imgElem.append(...ulGalleryEl);
