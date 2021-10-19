@@ -15,14 +15,16 @@ const images = [
   },
 ];
 
+
 const galleryEl = document.querySelector('.gallery');
-console.log(galleryEl);
 
-const createImg = img => {
-    return '<li> <img src = "$(img.url)" alt = "$(img.alt)"/></li>'
-}
+const imgElem = images.map((elem) => 
+  `<li><img src = "${elem.url}" alt = "${elem.alt}"  width = "150" height = "100" /></li>`
+  ).join("");
 
-const imgGallEl = images.map(createImg).join("");
-console.log(imgGallEl);
-galleryEl.insertAdjacentHTML("beforeend", imgGallEl);
+galleryEl.insertAdjacentHTML("beforeend", imgElem);
+
+
+
+
 
