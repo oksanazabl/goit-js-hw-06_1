@@ -5,9 +5,9 @@ function getRandomHexColor() {
 }
 
 const setBg = () => {
-  
-  document.body.style.backgroundColor = getRandomHexColor();
-  color.innerHTML = "#" + getRandomHexColor();
+  const color = getRandomHexColor();
+  document.body.style.backgroundColor = color;
+  color. = getRandomHexColor();
 }
 
 genNewCol.addEventListener("click", setBg);
