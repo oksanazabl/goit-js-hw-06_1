@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 const images = [
   {
@@ -15,13 +15,14 @@ const images = [
   },
 ];
 
-const GalleryEl = document.querySelector('.gallery');
+const galleryEl = document.querySelector('.gallery');
+console.log(galleryEl);
 
-const imgElem = images.map(elem => {
-    GalleryEl.insertAdjacentHTML(
-    'afterbegin',
-    `<li class = "gal"><img src = "${elem.url}" alt = "${elem.alt}"  width = "150" height = "100" /></li>`,
-  );
-  return elem;
-});
+const createImg = img => {
+    return '<li> <img src = "$(img.url)" alt = "$(img.alt)"/></li>'
+}
+
+const imgGallEl = images.map(createImg).join("");
+console.log(imgGallEl);
+galleryEl.insertAdjacentHTML("beforeend", imgGallEl);
 
