@@ -8,7 +8,7 @@ const input = document.querySelector('input');
 inputElem.addEventListener('change', elem => {
   const text = elem.target.value;
 
-  if (text.length === Number.inpLength) {
+  if (text.length === Number(inpLength)) {
     inputElem.classList.add('valid');
     inputElem.classList.remove('invalid');
   } else {
